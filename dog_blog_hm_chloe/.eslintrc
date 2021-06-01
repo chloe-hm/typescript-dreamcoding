@@ -1,0 +1,49 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "commonjs": true,
+      "node": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
+    },
+    "globals": {
+      "swal": true,
+      "Kakao": true,
+      "kakao": true,
+      "td": true,
+      "firebase": true
+    },
+    "plugins": ["react", "import"],
+    "rules": {
+      "react/react-in-jsx-scope": 0,
+      "no-console": ["error", { "allow": ["warn", "error"] }],
+      "import/order": [
+        "error",
+        {
+          "groups": ["builtin", "external", "internal"],
+          "pathGroups": [
+            {
+              "pattern": "react",
+              "group": "external",
+              "position": "before"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": ["react"],
+          "newlines-between": "ignore",
+          "alphabetize": {
+            "order": "desc",
+            "caseInsensitive": true
+          }
+        }
+      ]
+    }
+  }
+  
