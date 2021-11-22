@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es5",           // 컴파일된 코드가 어떤 환경에서 실행할지 정의
+    "module": "commonjs",      // compile된 코드가 어떤 모듈시스템을 사용할지 정의
+    "strict": true,            // 모든 타입 체크 옵션을 활성화
+    "esModuleInterop": true,   // commonjs모듈 형태로 된 것을 es2015모듈 형태로 불러올 수 있음
+    "outDir": "./dist"         // compile된 파일들이 저장되는 경로를 지정
+  }
+}
